@@ -1,7 +1,7 @@
  
 
 
-## Yazılım Mülakatı Soruları (Junior, Mid, Senior)
+## Yazılım Mülakatı Soruları (Junior, Medior, Senior)
 -  Repo yenidir. Sürekli olarak güncellenmektedir. Takibe almayı unutmayın. (Stars, Watch)
 
 
