@@ -40,4 +40,10 @@
 
 - SOLID, yazılım geliştirme dünyasında sık sık kullanılan bir prensipler kümesidir. SOLID, Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation ve Dependency Inversion olmak üzere beş prensipten oluşur. Bu prensipler, yazılım geliştiricilerinin yazılımın esnekliğini artırmasına ve daha sürdürülebilir bir kod tabanı oluşturmasına yardımcı olur.
 
+## Procedure ve Function arasındaki fark nedir, ne amaçla kullanırız?
+
+- Prosedürler ve fonksiyonlar, programlarda tekrar kullanılabilir kod blokları oluşturmak için kullanılan yapısal programlama araçlarıdır. İkisi arasındaki temel fark, geri dönüş değeri olup olmamasıdır. Prosedürler, belirli bir görevi gerçekleştirmek için kullanılan kod bloklarıdır. Geri dönüş değeri yoktur veya değeri yok sayılır. Genellikle verileri işlemek, ekrana çıktı yazdırmak veya başka bir işlemi gerçekleştirmek gibi işlevleri yerine getirmek için kullanılırlar.
+
+- Fonksiyonlar ise prosedürlerden farklı olarak geri dönüş değeri olan kod bloklarıdır. Fonksiyonlar, belirli bir hesaplama yapar ve sonucu çağıran yere döndürür. Fonksiyonlar, genellikle bir değeri hesaplamak, işlemek ve bu değeri geri döndürmek için kullanılır. Hangisini tercih edeceğiniz, yapmanız gereken işin doğası ve ihtiyaçlarınıza bağlıdır. Eğer bir görevi gerçekleştirmek için geri dönüş değeri gereksizse veya dikkate alınmayacaksa, prosedür kullanabilirsiniz. 
+- Örneğin, ekrana bir metin yazdırmak veya verileri sıralamak için bir prosedür kullanabilirsiniz. Ancak, bir hesaplama yapmanız veya bir değeri döndürmeniz gerekiyorsa, fonksiyonları tercih etmek daha uygun olabilir. Örneğin, iki sayının toplamını hesaplamak veya bir liste içindeki en büyük sayıyı bulmak için bir fonksiyon kullanabilirsiniz. Özetlemek gerekirse, prosedürler genellikle görevleri gerçekleştirmek için kullanılırken, fonksiyonlar hesaplamalar yapmak ve sonuçları döndürmek için tercih edilir. Hangisini seçeceğiniz, işin doğasına ve ihtiyaçlarınıza bağlıdır.
 
