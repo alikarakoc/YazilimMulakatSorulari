@@ -46,3 +46,48 @@
 - Fonksiyonlar ise prosedürlerden farklı olarak geri dönüş değeri olan kod bloklarıdır. Fonksiyonlar, belirli bir hesaplama yapar ve sonucu çağıran yere döndürür. Fonksiyonlar, genellikle bir değeri hesaplamak, işlemek ve bu değeri geri döndürmek için kullanılır. Hangisini tercih edeceğiniz, yapmanız gereken işin doğası ve ihtiyaçlarınıza bağlıdır. Eğer bir görevi gerçekleştirmek için geri dönüş değeri gereksizse veya dikkate alınmayacaksa, prosedür kullanabilirsiniz. 
 - Örneğin, ekrana bir metin yazdırmak veya verileri sıralamak için bir prosedür kullanabilirsiniz. Ancak, bir hesaplama yapmanız veya bir değeri döndürmeniz gerekiyorsa, fonksiyonları tercih etmek daha uygun olabilir. Örneğin, iki sayının toplamını hesaplamak veya bir liste içindeki en büyük sayıyı bulmak için bir fonksiyon kullanabilirsiniz. Özetlemek gerekirse, prosedürler genellikle görevleri gerçekleştirmek için kullanılırken, fonksiyonlar hesaplamalar yapmak ve sonuçları döndürmek için tercih edilir. Hangisini seçeceğiniz, işin doğasına ve ihtiyaçlarınıza bağlıdır.
 
+## Dependency injection nedir?
+
+- Dependency Injection (DI), yazılım geliştirme sürecinde sık sık kullanılan bir tasarım desenidir. Bu desen, bir nesnenin ihtiyaç duyduğu bağımlılıkları dışarıdan almasına ve sınıfın içinde doğrudan oluşturulmamasına izin verir. Bu, sınıfların daha bağımsız hale gelmesini ve daha kolay test edilebilir hale gelmesini sağlar.
+- Dependency Injection, bir yazılım tasarım deseni olarak, bağımlılıkların (dependencies) dışarıdan bir bileşenin içine enjekte edilmesini sağlar. Bu desen, bir bileşenin bağımlılıklarını oluşturmak ve yönetmek yerine, bu bağımlılıkların dışarıdan bir kaynak tarafından sağlanmasını sağlar.
+- Bir örnekle açıklamak gerekirse, bir Araba nesnesi oluşturmak istediğimizi düşünelim. Araba'nın bir motor, lastikler, direksiyon vb. gibi birçok bağımlılığı vardır. Geleneksel bir yaklaşımda, Araba nesnesi oluşturulurken bu bağımlılıkların her biri tek tek oluşturulur veya oluşturulması için başka bir bileşen çağrılır.
+- Fakat bu yaklaşım, kodun karmaşıklaşmasına ve sıkı bir şekilde bağımlı hale gelmesine neden olabilir. Bu durumda, Dependency Injection kullanarak Araba nesnesini oluşturmak daha uygun olacaktır.
+- Dependency Injection kullanarak, Araba bileşenini oluşturmak istediğimizde, Araba'nın bağımlılıkları dışarıdan bir kaynaktan (örneğin bir IOC Container) alınır ve Araba bileşenine enjekte edilir. Bu sayede Araba bileşeni, bağımlılıklarını yönetmek yerine, bunları dışarıdan gelen kaynak tarafından sağlanır.
+- Özetle, Dependency Injection, kodun daha modüler ve esnek olmasını sağlar. Bu desen, yazılım bileşenlerinin birbirlerine sıkı bir şekilde bağımlı olmaktan kurtulmasına ve daha kolay test edilebilmesine olanak tanır.
+
+## Örnek;
+
+```
+public class Araba {
+    private Motor motor;
+    private Tekerlekler tekerlekler;
+    private Direksiyon direksiyon;
+    
+    public Araba(Motor motor, Tekerlekler tekerlekler, Direksiyon direksiyon) {
+        this.motor = motor;
+        this.tekerlekler = tekerlekler;
+        this.direksiyon = direksiyon;
+    }
+     // Araba'nın diğer metotları...
+}
+
+```
+
+## Abstract ve interface benzerlik farklılıkları nelerdir?
+
+- Abstract ve Interface, OOP'de sık kullanılan kavramlardır. Abstract sınıflar, bir sınıfın soyut bir temel sınıfı olduğunu belirtir ve soyut işlevleri veya değişkenleri içerebilir. Interface'ler ise, bir sınıfın uygulaması gereken belirli işlevleri tanımlar ve sınıflar arasındaki bağımlılıkları azaltmak için kullanılır.
+
+## Docker nedir kısaca açıklarmısınız?
+
+- Docker, yazılım uygulamalarının hızlı bir şekilde dağıtılmasını, yönetilmesini ve çalıştırılmasını sağlayan bir platformdur. Docker, uygulamanın bağımlılıklarını ve konfigürasyonunu içeren sanal ortamlar oluşturur.
+
+## RabbitMQ nedir?
+
+- RabbitMQ, açık kaynaklı bir mesajlaşma aracıdır ve uygulamalar arasındaki mesajlaşmayı kolaylaştırır. Bu araç, birçok farklı protokolü destekler ve birçok dilde kullanılabilir.
+
+## Microservice ve monolitik sistemler arasındaki farklılıklar nelerdir?
+
+- Microservice mimarisi, bir uygulamanın farklı işlevlerinin farklı servisler halinde ayrılmasıdır. Bu yaklaşım, uygulamayı daha esnek hale getirir, ölçeklenebilirliği artırır ve hata ayıklama ve bakımı kolaylaştırır. Monolitik mimari ise, tüm uygulamanın tek bir yapıda oluşturulmasıdır. Bu yaklaşım, uygulama geliştirmeyi daha kolay hale getirir, ancak büyük uygulamalarda ölçeklenebilirlik sorunlarına neden olabilir. Microservice yaklaşımı, uygulamanın her bir işlevini ayrı ayrı yönetme ve ölçekleme imkanı sağlar.
+
+
+
