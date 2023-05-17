@@ -38,6 +38,13 @@
 ## SOLID prensipleri hakkında açıklama yapabilirmisin?
 
 - SOLID, yazılım geliştirme dünyasında sık sık kullanılan bir prensipler kümesidir. SOLID, Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation ve Dependency Inversion olmak üzere beş prensipten oluşur. Bu prensipler, yazılım geliştiricilerinin yazılımın esnekliğini artırmasına ve daha sürdürülebilir bir kod tabanı oluşturmasına yardımcı olur.
+- Solid prensipleri, yazılım geliştirme sürecinde kaliteli, sürdürülebilir ve esnek bir kod oluşturmayı hedefleyen bir dizi kurallardır. SOLID, Robert C. Martin tarafından önerilen ve beş temel prensibi içeren bir akronimdir:
+- Single Responsibility Principle (Tek Sorumluluk Prensibi): Her sınıf veya modül, yalnızca bir tek sorumluluğa sahip olmalı ve bu sorumluluğu başarılı bir şekilde yerine getirmelidir.
+- Open/Closed Principle (Açık/Kapalı Prensibi): Bir yazılım birimi (sınıf, fonksiyon, modül) değişikliklere kapalı (closed) olmalı, ancak yeni işlevsellik eklemek için açık (open) olmalıdır. Yani mevcut kodu değiştirmek yerine, yeni özellikler eklemek için genişletilebilir olmalıdır.
+- Liskov Substitution Principle (Liskov Yerine Geçme Prensibi): Bir üst sınıfın nesneleri, onun alt sınıfları tarafından yerine geçebilmelidir. Yani alt sınıflar, üst sınıfın belirlediği davranışları korumalı ve bu davranışları değiştirmeden genişletebilmelidir.
+- Interface Segregation Principle (Arayüz Ayrım Prensibi): İstemcilerin kullanmadığı özellikleri içeren geniş arayüzler yerine, daha küçük ve özelleştirilmiş arayüzler kullanılmalıdır. Bir sınıf, sadece ihtiyaç duyduğu metotları içeren arayüzleri uygulamalıdır.
+- Dependency Inversion Principle (Bağımlılığı Tersine Çevirme Prensibi): Yüksek seviyeli modüller, düşük seviyeli modüllere doğrudan bağlı olmamalıdır. Bunun yerine, her iki seviyenin de soyutlamalara (abstractions) bağımlı olması gerekmektedir.
+- Bu prensipler, yazılımın daha kolay bakım yapılabilir, test edilebilir ve genişletilebilir olmasını sağlar. Aynı zamanda kodun tekrar kullanılabilirliğini artırır ve bağımlılıkları azaltır.
 
 ## Procedure ve Function arasındaki fark nedir, ne amaçla kullanırız?
 
