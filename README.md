@@ -3,13 +3,19 @@
 
 ## Yazılım Mülakatı Soruları (Junior, Mid, Senior)
 -  Repo yenidir. Sürekli olarak güncellenmektedir. Takibe almayı unutmayın. (Stars, Watch)
-## Virtual yapısı nedir?
+
+
+## Virtual class nedir?
 
 - Virtual yapısı, nesne yönelimli programlama (OOP) konseptlerinden biridir ve bir sınıfın üye işlevlerinin, türetilmiş sınıflar tarafından yeniden tanımlanabileceği anlamına gelir. Bu, türetilmiş sınıfların üye işlevlerinin davranışını kontrol etmesine izin verir.
 
-## Partial yapısı nedir?
+## Partial class nedir?
 
-- Partial yapısı, bir sınıfın tanımının iki veya daha fazla kaynaktan geldiği durumlarda kullanılır. Bu, sınıfın tanımının farklı dosyalara bölünebileceği anlamına gelir ve bu dosyalarda farklı üye işlevleri tanımlanabilir.
+- Partial sınıflar, C# programlama dilindeki bir özelliktir. Bir sınıfı bölümlere ayırmak ve farklı dosyalarda tanımlamak için kullanılırlar. Partial sınıflar, aynı sınıfa ait kodun farklı dosyalarda veya ayrı bölmelerde dağıtılmasına izin verir.
+- Bu özellik, büyük ölçekli projelerde sınıfların daha iyi organize edilmesini sağlar ve birden fazla geliştirici aynı sınıf üzerinde çalışırken çakışmaları azaltır. Örneğin, bir sınıfın uygulama mantığını, arayüz tanımlarını veya veritabanı işlemlerini farklı dosyalarda belirli bölümlere ayırabilirsiniz.
+- Partial sınıfların kullanımı, sınıfın kodunun karmaşıklığını azaltır ve sınıfın bakımını ve genişletilebilirliğini kolaylaştırır. Ayrıca, otomatik kod üreten araçlar veya tasarım araçları tarafından üretilen kodu manuel olarak genişletebilir ve değiştirebilirsiniz.
+- Kısacası, partial sınıflar, bir sınıfın kodunu farklı dosyalarda veya bölmelerde organize etmek ve büyük projelerde sınıfın geliştirilmesini kolaylaştırmak için kullanılan bir C# özelliğidir.
+
 
 ## Static durumları ve kullanımı hakkında açıklama yapınız?
 
@@ -95,6 +101,63 @@ public class Araba {
 ## Microservice ve monolitik sistemler arasındaki farklılıklar nelerdir?
 
 - Microservice mimarisi, bir uygulamanın farklı işlevlerinin farklı servisler halinde ayrılmasıdır. Bu yaklaşım, uygulamayı daha esnek hale getirir, ölçeklenebilirliği artırır ve hata ayıklama ve bakımı kolaylaştırır. Monolitik mimari ise, tüm uygulamanın tek bir yapıda oluşturulmasıdır. Bu yaklaşım, uygulama geliştirmeyi daha kolay hale getirir, ancak büyük uygulamalarda ölçeklenebilirlik sorunlarına neden olabilir. Microservice yaklaşımı, uygulamanın her bir işlevini ayrı ayrı yönetme ve ölçekleme imkanı sağlar.
+
+## AddScope, AddSingleton, AddTransient nedir kısa ve net bir şekilde açıklayabilirmisin?
+
+- AddScope: Bu metot, bağımlılık enjeksiyonu konteynerine bir servis kaydederken, bu servisin her talep edildiğinde bir kapsam (scope) boyunca aynı örneğini döndürmesini sağlar. Kapsam boyunca aynı örneğin kullanılması, örneğin bir HTTP isteği süresince aynı servis nesnesinin paylaşılmasını sağlar. Bu genellikle, bir istek içinde birden fazla bileşenin aynı verilere veya durumlara erişmesi gerektiği durumlarda kullanılır.
+- AddSingleton: Bu metot, bağımlılık enjeksiyonu konteynerine bir servis kaydederken, bu servisin uygulama ömrü boyunca yalnızca bir kez oluşturulup paylaşılmasını sağlar. Herhangi bir talep edildiğinde aynı örneği döndürür. Bu, uygulama boyunca tek bir örnek kullanmak istediğiniz durumlarda faydalıdır. Örneğin, bir konfigürasyon ayarını veya veritabanı bağlantısını paylaşmak için kullanılabilir.
+- AddTransient: Bu metot, her talep edildiğinde yeni bir örnek oluşturarak her bir talep için farklı bir örneği döndürmek üzere bir servis kaydeder. Yani her talep edildiğinde bir örnek oluşturulur ve bu örnek sadece bu talep için kullanılır. Bu, hafızada paylaşımlı bir durumu veya veriyi saklamak yerine, her talep edildiğinde taze bir örneğe ihtiyaç duyduğunuz durumlarda kullanışlıdır. Örneğin, geçici bellek kullanıcı oturumlarını veya işlem durumunu depolamak için kullanılabilir.
+- Bu üç metot, bağımlılıkların nasıl kaydedileceği ve hangi örneklerin nasıl döndürüleceği konusunda farklı davranışları temsil eder. Uygulamanızın gereksinimlerine göre doğru yöntemi seçmek önemlidir.
+
+## Int32 ve Int64 arasında ki fark nedir?
+
+- Int32 ve Int64, tamsayı veri tiplerini ifade eder. Farkları, temsil ettikleri tamsayı değerlerinin boyutlarından kaynaklanır.
+- Int32, 32 bit (4 byte) uzunluğunda bir tamsayıyı temsil eder. Bu veri tipi, -2,147,483,648 ile 2,147,483,647 arasındaki tamsayı değerlerini alabilir. Negatif ve pozitif değerler için aynı miktarda alan ayrılır.
+- Int64 ise 64 bit (8 byte) uzunluğunda bir tamsayıyı temsil eder. Bu veri tipi, -9,223,372,036,854,775,808 ile 9,223,372,036,854,775,807 arasındaki tamsayı değerlerini alabilir. Negatif ve pozitif değerler için aynı miktarda alan ayrılır.
+- Bu nedenle, Int32 daha küçük bir değer aralığına ve daha az bellek kullanımına sahiptirken, Int64 daha büyük bir değer aralığına ve daha fazla bellek kullanımına sahiptir. Seçiminiz, temsil etmek istediğiniz değerlerin aralığına bağlı olacaktır.
+
+## DataRow ve DataReader arasındaki fark nedir?
+- DataRow ve DataReader, .NET Framework'teki ADO.NET kütüphanesindeki farklı sınıflardır ve veritabanı işlemleriyle ilgili farklı amaçlar için kullanılırlar.
+- DataRow, DataTable nesnesindeki bir veri kaydını temsil eder. DataTable, tablo yapısında verileri depolamak için kullanılan bir sınıftır. DataRow ise DataTable içindeki her bir veri kaydını temsil eder. Bir DataRow nesnesi, tablodaki her bir sütunun değerlerini saklar.
+- DataReader ise veritabanı işlemlerinde verileri okumak için kullanılan bir sınıftır. Bir veritabanı sorgusu çalıştırıldığında, DataReader sorgu sonucundaki veri akışını temsil eder ve verileri satır satır okur. DataReader, verileri sorgudan döndürerek, bellekte daha az yer kaplayarak daha hızlı ve verimli bir şekilde çalışır. Verileri tek yönlü (forward-only) olarak okur, yani ileri doğru hareket ederek verilere erişir. DataReader, veritabanı bağlantısı açık olduğu sürece verileri okumaya devam eder.
+- Özetle, DataRow verileri tablo yapısında saklamak ve işlemek için kullanılırken, DataReader verileri veritabanından okumak ve işlemek için kullanılır.
+
+## Dictionary ile List arasında ki fark nedir hangisi daha hızlı çalışır?
+
+- C# dilinde Dictionary ve List, farklı veri yapılarıdır ve farklı amaçlar için kullanılırlar. İkisi arasındaki ana fark, verileri nasıl depoladıkları ve erişim süreleridir.
+- Depolama Yapısı:
+- List: List, elemanları bir sıra içinde depolar. Her eleman bir indeks numarasıyla erişilebilir ve elemanlar eklenme sırasına göre tutulur.
+- Dictionary: Dictionary, bir anahtar-değer çiftleri koleksiyonunu depolar. Her bir anahtar benzersiz olmalıdır ve her anahtarın karşısında bir değer bulunur. Anahtarlar, elemanları hızlı bir şekilde erişmek için kullanılır.
+- Erişim Süresi:
+- List: List, indeks numarasına dayalı olarak elemanlara erişir. Dolayısıyla, bir elemana erişmek için indeks numarasını bilmek gereklidir. Elemanlara erişim süresi O(1) olarak kabul edilir.
+- Dictionary: Dictionary, anahtarlar aracılığıyla elemanlara erişir. Anahtarın değeri bulmak için bir karma işlev kullanılır. Bu karma işlemi sayesinde elemanlara hızlı bir şekilde erişilebilir. Elemanlara erişim süresi de O(1) olarak kabul edilir.
+- Sonuç olarak, Dictionary ve List arasında erişim hızı açısından bir fark yoktur, her ikisi de O(1) süresinde elemanlara erişir. Ancak, elemanlara erişmek için kullanılan yöntemler farklıdır. Listeler, indeks numaralarına dayalı olarak elemanlara erişim sağlar, Dictionary'ler ise anahtarlar aracılığıyla elemanlara erişir. Dolayısıyla, kullanmanız gereken veri yapısı, işlevsel gereksinimlerinize ve verilerinizi nasıl organize etmek istediğinize bağlıdır.
+
+## Sealed class nedir?
+
+- C# dilinde "sealed" (mühürlü) bir sınıf, miras alınmasını engellemek için kullanılan bir özelliktir. Sealed sınıflar, alt sınıfların oluşturulmasını ve bu sınıflardan türetilmelerini önler. Yani, bir sınıfı sealed olarak işaretlerseniz, başka bir sınıfın bu sınıftan türemesine izin vermezsiniz.
+- Sealed sınıflar genellikle, tamamen oluşturulmuş ve genişletilmesine veya değiştirilmesine ihtiyaç duyulmayan sınıflar için kullanılır. Bu, sınıfın davranışını veya yapısını değiştirmemeyi ve sağlam bir şekilde korumayı amaçlayan tasarım kararlarında kullanışlı olabilir.
+- Bir sınıfı sealed olarak işaretlemek, kodunuzun belirli bir noktada kesintiye uğramasını engellemeye yardımcı olabilir. Sealed sınıflar aynı zamanda performans açısından da iyileştirme sağlayabilir, çünkü C# derleyicisi, sealed sınıfların daha verimli bir şekilde optimize edilebileceğini bilir.
+- Sonuç olarak, sealed sınıflar C# dilinde miras alınmasını engelleyen sınıflardır. Bu özellik, kodunuzun sağlamlığını korumak ve belirli bir tasarımı güvence altına almak için kullanılabilir.
+
+## Record class nedir?
+
+- C# 9.0 ile birlikte gelen "record" sınıfı, sadece veri taşıyan ve genellikle değişmez olan veri yapılarını temsil etmek için kullanılan bir sınıf türüdür. "record" sınıfları, değer nesneleri (value objects) olarak adlandırılan ve özellikleri üzerinden eşitlik ve eşleştirme gibi işlemler gerçekleştiren sınıfları tanımlamak için kullanılır.
+- "record" sınıfları, verileri depolamak için otomatik olarak gerekli tüm kodu oluştururlar. Bu, özellikleri tanımlarken getter ve setter gibi ayrı kodları yazmanıza gerek kalmadan basit bir şekilde özellikleri belirtebileceğiniz anlamına gelir. Ayrıca, "record" sınıfları varsayılan olarak "değer eşitliği" (value equality) olarak adlandırılan işlemleri destekler. Yani, iki "record" nesnesi aynı değere sahipse, bunlar eşit olarak kabul edilir.
+- Aşağıda basit bir "record" sınıfı örneği verilmiştir:
+
+```
+public record Person
+{
+    public string FirstName { get; init; }
+    public string LastName { get; init; }
+    public int Age { get; init; }
+}
+```
+- Yukarıdaki örnekte, "Person" sınıfı, bir kişinin adını, soyadını ve yaşını depolayan bir "record" sınıfıdır. "init" özelliği, özelliklerin sadece başlatıcı tarafından ayarlanabileceğini belirtir, yani sınıf oluşturulduktan sonra değerleri değiştirilemez.
+- "record" sınıfları, özellikleri üzerinden desen eşleştirmesi (pattern matching) gibi işlemleri kolaylaştırır ve hızlıca verileri kopyalayıp değiştirmenizi sağlar. Ayrıca, "record" sınıfları, diğer sınıflarla birlikte kullanıldığında kodun daha okunabilir ve sürdürülebilir olmasını sağlayabilir.
+- Bu nedenlerle, C# "record" sınıfları genellikle verileri taşımak, eşleştirmek ve karşılaştırmak için kullanılan basit veri yapısı sınıflarını tanımlamak için tercih edilir.
+
 
 
 
