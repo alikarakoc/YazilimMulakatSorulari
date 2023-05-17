@@ -158,6 +158,40 @@ public record Person
 - "record" sınıfları, özellikleri üzerinden desen eşleştirmesi (pattern matching) gibi işlemleri kolaylaştırır ve hızlıca verileri kopyalayıp değiştirmenizi sağlar. Ayrıca, "record" sınıfları, diğer sınıflarla birlikte kullanıldığında kodun daha okunabilir ve sürdürülebilir olmasını sağlayabilir.
 - Bu nedenlerle, C# "record" sınıfları genellikle verileri taşımak, eşleştirmek ve karşılaştırmak için kullanılan basit veri yapısı sınıflarını tanımlamak için tercih edilir.
 
+### CQRS Design Pattern nedir?
 
+- Hazırlanıyor...
+
+### DDD Design Pattern nedir?
+
+- Hazırlanıyor...
+
+### Outbox Design Pattern nedir, ne için kullanılır?
+
+- Hazırlanıyor...
+
+### Aggregate Root nedir?
+
+- Hazırlanıyor...
+
+### Value Object, Reference Object arasındaki farklar nelerdir. Açıklayınız?
+
+- Hazırlanıyor...
+
+### Entity kavramları nedir kısaca özetleyiniz?
+
+- Hazırlanıyor...
+
+### Event sourcing pattern hakkında ne biliyorsunuz nedir açıklayabilirmisiniz?
+
+- Hazırlanıyor...
+
+### RabbitMQ Exchange Nedir ? Exchange Tipleri nelerdir?
+
+- Hazırlanıyor...
+
+### Fair Dispatch nedir? Nasıl kullanılır?
+
+- Hazırlanıyor...
 
 
