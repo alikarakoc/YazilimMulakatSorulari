@@ -194,4 +194,20 @@ public record Person
 
 - Hazırlanıyor...
 
+### Builder Design Pattern nedir ne amaçla kullanılır?
+
+- Hazırlanıyor...
+
+### Spesification Design Pattern nedir ne amaçla kullanılır? 
+
+- Hazırlanıyor...
+
+### Factory Design Pattern nedir ne amaçla kullanılır?
+
+- Hazırlanıyor...
+
+### Saga Distributed Transactions Pattern nedir ne amaçla kullanılır?
+
+- Hazırlanıyor...
+
 
