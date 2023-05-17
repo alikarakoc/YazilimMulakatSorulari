@@ -1,10 +1,9 @@
  
 
 
-## Yazılım Mülakatı Soruları (Junior, Mid, Senior) Sürekli olarak güncellenmektedir. Takibe almayı unutmayın. (Stars)
+## Yazılım Mülakatı Soruları (Junior, Mid, Senior)
+-  Repo yenidir. Sürekli olarak güncellenmektedir. Takibe almayı unutmayın. (Stars, Watch)
 ## Virtual yapısı nedir?
-
- 
 
 - Virtual yapısı, nesne yönelimli programlama (OOP) konseptlerinden biridir ve bir sınıfın üye işlevlerinin, türetilmiş sınıflar tarafından yeniden tanımlanabileceği anlamına gelir. Bu, türetilmiş sınıfların üye işlevlerinin davranışını kontrol etmesine izin verir.
 
