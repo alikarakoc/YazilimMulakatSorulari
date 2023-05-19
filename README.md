@@ -218,3 +218,7 @@ public record Person
 ### Lock mekanizması nedir hiç kullandın mı ? Ne için kullandın?
 
 - Hazırlanıyor...
+
+### Thread Safe – ConcurrentQueue, ConcurrentDictionary, ConcurrentBag, ConcurrentStack ve BlockingCollection Koleksiyonları hakkında neler biliyorsunuz?
+
+- Hazırlanıyor...
