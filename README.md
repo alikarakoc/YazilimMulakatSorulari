@@ -211,4 +211,10 @@ public record Person
 
 - Hazırlanıyor...
 
+### ConcurrentBag nedir ne için kullanırız?
 
+- Hazırlanıyor...
+
+### Lock mekanizması nedir hiç kullandın mı ? Ne için kullandın?
+
+- Hazırlanıyor...
