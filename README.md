@@ -222,3 +222,24 @@ public record Person
 ### Thread Safe – ConcurrentQueue, ConcurrentDictionary, ConcurrentBag, ConcurrentStack ve BlockingCollection Koleksiyonları hakkında neler biliyorsunuz?
 
 - Hazırlanıyor...
+
+### Asenkron programlama nedir? Hangi problemlere çözüm sağlamaktadır?
+
+- Hazırlanıyor...
+
+### ORM nedir? .Net/.Net Core platformlarında yaygın olarak kullanılan ORM teknolojileri hangileridir?
+
+- Hazırlanıyor...
+
+### Hangfire nedir? Hangi amaçla kullanılmaktadır?
+
+- Hazırlanıyor...
+
+### CI/CD nedir?
+
+- Hazırlanıyor...
+
+### Daha önce .Net/.Net Core platformlarında hangi test framework'lerini kullandınız?
+
+- Hazırlanıyor...
+
