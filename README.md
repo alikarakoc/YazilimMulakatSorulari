@@ -200,7 +200,61 @@ public record Person
 
 ### Aggregate Root nedir?
 
-- Hazırlanıyor...
+
+- Aggregate kökü (Aggregate Root), bir yazılım sistemi içindeki nesnelerin hiyerarşik ilişkilerinin yönetildiği bir kavramdır. Bu kavram, Domain Driven Design (DDD) adı verilen bir yazılım tasarım yaklaşımının bir parçasıdır.
+
+- Aggregate, birbirleriyle yakından ilişkili olan nesnelerin bir gruplamasıdır. Aggregate Root ise bu gruplamadaki ana veya kök nesnedir. Bir Aggregate Root, bir Aggregate içinde diğer nesnelerle etkileşim kurabilen ve onları yöneten bir nesnedir. Diğer nesneler, sadece Aggregate Root üzerinden erişilebilir ve bu sayede Aggregate'ın tutarlılığı korunur.
+
+- Aggregate Root'un birkaç önemli işlevi vardır:
+
+- Tutarlılık sağlama: Aggregate Root, içindeki diğer nesnelerin durumunu yöneterek, Aggregate'ın tutarlılığını korur. Yani, Aggregate'ın bileşenleri arasındaki ilişkileri kontrol eder ve Aggregate'ın bütünlüğünü sağlar.
+
+- İşlem sınırlarını tanımlama: Aggregate Root, Aggregate içindeki işlemlerin sınırlarını belirler. Diğer nesneler yalnızca Aggregate Root üzerinden erişilebildiği için, Aggregate'ın dışındaki nesneler doğrudan değiştirilemez veya etkileşimde bulunamaz. Bu, Aggregate'ın bütünlüğünü korumaya yardımcı olur ve sistemdeki yanlışlık riskini azaltır.
+
+- Nesneler arasında birbirine bağlılık sağlama: Aggregate Root, içindeki diğer nesnelerin birbirleriyle ilişkili olduğu bir yapı sağlar. Nesneler arasındaki bağlantıları yönetir ve bu bağlantıların tutarlı kalmasını sağlar.
+
+- Aggregate Root, bir yazılım sistemindeki karmaşayı azaltmak ve sistemdeki nesnelerin düzenlenmesini ve yönetilmesini kolaylaştırmak için kullanılır. DDD'nin temel prensiplerinden biridir ve yazılım tasarımında Aggregate'ların doğru şekilde tanımlanması ve kullanılması önemlidir.
+
+- Örnek;
+- Varsayalım ki bir müşteri (Customer) ve bu müşterinin siparişleri (Order) adında iki sınıfımız var. Bu iki sınıf arasında Aggregate Root ilişkisi bulunacak.
+
+```
+public class Customer
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    // Diğer özellikler
+
+    // Customer sınıfı, Order nesnelerinin bir koleksiyonunu içeriyor
+    public ICollection<Order> Orders { get; set; }
+
+    // Aggregate Root işlemleri
+    public void PlaceOrder(Order order)
+    {
+        // Siparişin geçerli olup olmadığını kontrol etme
+        // Diğer işlemler
+
+        Orders.Add(order);
+    }
+
+    public void CancelOrder(Order order)
+    {
+        // Siparişin iptal işlemleri
+        // Diğer işlemler
+
+        Orders.Remove(order);
+    }
+}
+
+public class Order
+{
+    public int Id { get; set; }
+    public DateTime OrderDate { get; set; }
+    // Diğer özellikler
+}
+
+```
+
 
 ### Value Object, Reference Object arasındaki farklar nelerdir. Açıklayınız?
 
