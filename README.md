@@ -175,7 +175,21 @@ public record Person
 
 ### DDD Design Pattern nedir?
 
-- Hazırlanıyor...
+- DDD (Domain-Driven Design), yazılım geliştirme sürecinde bir tasarım yaklaşımı ve bir dizi prensiptir. DDD'nin temel amacı, karmaşık iş mantığını ve etkileşimleri içeren bir yazılımın anlaşılabilir, sürdürülebilir ve esnek bir şekilde geliştirilmesini sağlamaktır.
+
+- DDD'nin kullanımı, bir yazılım projesindeki temel iş alanı (domain) kavramlarına odaklanmayı ve bu kavramları yazılım modeline doğru şekilde yansıtmayı hedefler. İş alanı, bir organizasyonun ana faaliyetlerini ve süreçlerini temsil eden kritik iş kurallarını içerir. DDD, bu iş kurallarını ve iş süreçlerini anlamaya, modellemeye ve uygulamaya yönelik bir metodoloji sunar.
+
+- DDD'nin bazı temel prensipleri şunlardır:
+
+- 1. Ubiquitous Language (Yaygın Dil): Proje paydaşları arasında ortak bir dil oluşturulması ve bu dilin yazılım modeline yansıtılması önemlidir. Böylece, iş süreçlerini ifade etmek için kullanılan terimler, hem iş tarafı hem de teknik tarafın anlayabileceği şekilde birleştirilir.
+
+- 2. Bounded Contexts (Sınırlı Bağlamlar): Karmaşık bir iş alanı genellikle farklı alt bölgelere veya sınırlı bağlamlara ayrılabilir. Her bir sınırlı bağlam, birbiriyle bağlantılı olan kendi iş kurallarını ve modellerini içerir. DDD, bu sınırlı bağlamların doğru şekilde tanımlanmasını ve sınırlarının belirlenmesini teşvik eder.
+
+- 3. Aggregates (Kümeler): DDD'de, iş kurallarını gruplamak için kümeler kullanılır. Bir kümelenmiş nesne, birbirine bağlı nesneler koleksiyonudur ve dış dünyaya tek bir birim gibi görünür. Kümeler, iş süreçlerini sınırlı bağlamlar içinde daha iyi organize etmeye yardımcı olur ve veri bütünlüğünü korumak için birlikte işlem görürler.
+
+- 4. Domain Events (İş Etkinlikleri): DDD, iş süreçlerindeki önemli olayları işaretlemek ve bu olayları diğer bileşenlerle iletişim kurmak için kullanmak için iş etkinliklerini tanımlar. İş etkinlikleri, bir değişiklik veya önemli bir durum gerçekleştiğinde diğer bileşenlere bildirim göndermek için kullanılır.
+
+- DDD, karmaşık iş mantığının başarılı bir şekilde yönetilmesine ve bir yazılımın evrimsel, esnek ve anlaşılabilir olmasına yardımcı olur. Bu, daha
 
 ### Outbox Design Pattern nedir, ne için kullanılır?
 
