@@ -3,7 +3,7 @@
 
 ## Yazılım Mülakatı Soruları (Junior, Medior, Senior)
 -  Repo yenidir. Sürekli olarak güncellenmektedir. Takibe almayı unutmayın. (Star, Watch)
--  Eklemek istediğiniz soru ve cevapları tarafıma gönderebilirsiniz.
+-  Girdiğiniz mülakatlar da karşınıza çıkan soruları eklemek isterseniz pull reuqest gönderebilirsiniz. Merge ediyorum.
 
 
 ## Virtual class nedir?
