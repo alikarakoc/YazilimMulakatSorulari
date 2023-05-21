@@ -179,17 +179,20 @@ public record Person
 
 - DDD'nin kullanımı, bir yazılım projesindeki temel iş alanı (domain) kavramlarına odaklanmayı ve bu kavramları yazılım modeline doğru şekilde yansıtmayı hedefler. İş alanı, bir organizasyonun ana faaliyetlerini ve süreçlerini temsil eden kritik iş kurallarını içerir. DDD, bu iş kurallarını ve iş süreçlerini anlamaya, modellemeye ve uygulamaya yönelik bir metodoloji sunar.
 
-- DDD'nin bazı temel prensipleri şunlardır:
+- DDD'nin sağladığı faydalar şunlardır:
 
-- 1. Ubiquitous Language (Yaygın Dil): Proje paydaşları arasında ortak bir dil oluşturulması ve bu dilin yazılım modeline yansıtılması önemlidir. Böylece, iş süreçlerini ifade etmek için kullanılan terimler, hem iş tarafı hem de teknik tarafın anlayabileceği şekilde birleştirilir.
+- Derin iş anlayışı: DDD, proje paydaşları arasında ortak bir dil oluşturmayı teşvik eder. Bu, işin gerçek dünyadaki süreçlerini ve gereksinimlerini anlamaya yönelik derin bir iş anlayışının geliştirilmesini sağlar. Böylece, yazılım modeli işin gerçek ihtiyaçlarını doğru bir şekilde yansıtabilir.
 
-- 2. Bounded Contexts (Sınırlı Bağlamlar): Karmaşık bir iş alanı genellikle farklı alt bölgelere veya sınırlı bağlamlara ayrılabilir. Her bir sınırlı bağlam, birbiriyle bağlantılı olan kendi iş kurallarını ve modellerini içerir. DDD, bu sınırlı bağlamların doğru şekilde tanımlanmasını ve sınırlarının belirlenmesini teşvik eder.
+- Esneklik ve evrilebilirlik: DDD, yazılımın evrimsel olmasını sağlar. İş mantığındaki değişiklikler, yazılım modelinde yapılan değişikliklerle uyumlu olacak şekilde kolayca gerçekleştirilebilir. DDD'nin bileşenler arasındaki net sınırlarının ve iyi tanımlanmış bağlantılarının olması, değişikliklerin diğer bileşenlere minimum etkisini sağlar.
 
-- 3. Aggregates (Kümeler): DDD'de, iş kurallarını gruplamak için kümeler kullanılır. Bir kümelenmiş nesne, birbirine bağlı nesneler koleksiyonudur ve dış dünyaya tek bir birim gibi görünür. Kümeler, iş süreçlerini sınırlı bağlamlar içinde daha iyi organize etmeye yardımcı olur ve veri bütünlüğünü korumak için birlikte işlem görürler.
+- Daha iyi modülerlik: DDD, iş domainini ve bileşenlerin sorumluluklarını net bir şekilde tanımlar. Bu, yazılımın modüler bir yapıya sahip olmasını sağlar. Modülerlik, bileşenlerin bağımsız olarak geliştirilmesini, test edilmesini ve sürdürülmesini kolaylaştırır.
 
-- 4. Domain Events (İş Etkinlikleri): DDD, iş süreçlerindeki önemli olayları işaretlemek ve bu olayları diğer bileşenlerle iletişim kurmak için kullanmak için iş etkinliklerini tanımlar. İş etkinlikleri, bir değişiklik veya önemli bir durum gerçekleştiğinde diğer bileşenlere bildirim göndermek için kullanılır.
+- Test edilebilirlik: DDD, iş domainindeki iş kurallarını açık bir şekilde ifade etmeyi teşvik eder. Bu, iş kurallarının doğru bir şekilde test edilmesini sağlar. DDD, test edilebilirlik için mocklama ve taklit (stub) gibi teknikleri destekler.
 
-- DDD, karmaşık iş mantığının başarılı bir şekilde yönetilmesine ve bir yazılımın evrimsel, esnek ve anlaşılabilir olmasına yardımcı olur. Bu, daha
+- Ekip işbirliği: DDD'nin ortak bir dil ve net bir iş domaini modeli sağlaması, ekipler arasında daha iyi bir işbirliği sağlar. İş süreçlerini anlamak ve yazılım modelini paylaşmak, iş analistleri, geliştiriciler ve diğer paydaşlar arasında etkili bir iletişimi teşvik eder.
+
+- DDD, karmaşık iş mantığını yönetmek için bir dizi prensip, tasarım deseni ve teknik sağlar. Bu yaklaşım, yazılım projelerinin başarılı bir şekilde geliştirilmesi ve sürdürülmesi için değerli bir araçtır.
+ 
 
 ### Outbox Design Pattern nedir, ne için kullanılır?
 
