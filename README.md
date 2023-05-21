@@ -255,6 +255,10 @@ public class Order
 
 ```
 
+- Yukarıdaki örnekte Customer sınıfı, Aggregate Root rolünü üstleniyor. Orders koleksiyonu üzerinden Customer'ın ilişkili olduğu Order nesnelerine erişim sağlanıyor. Customer sınıfı, PlaceOrder ve CancelOrder gibi işlemleri gerçekleştirerek Aggregate Root'un tutarlılığını sağlıyor.
+
+- Bu örnekte, Aggregate Root olan Customer sınıfı üzerinden Order nesneleri yönetiliyor. Order nesneleri, Customer sınıfının içindeki Orders koleksiyonuna eklenip çıkarılıyor. Bu şekilde Aggregate Root ilişkisi ve tutarlılık sağlanmış oluyor.
+
 
 ### Value Object, Reference Object arasındaki farklar nelerdir. Açıklayınız?
 
