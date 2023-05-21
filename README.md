@@ -161,7 +161,17 @@ public record Person
 
 ### CQRS Design Pattern nedir?
 
-- Hazırlanıyor...
+- CQRS, "Command Query Responsibility Segregation" (Komut Sorgu Sorumluluğu Ayrımı) kelimelerinin baş harflerinden oluşan bir tasarım desenidir. Bu desen, bir uygulama veya sistemdeki komutları (command) ve sorguları (query) ayrı ayrı ele almayı önerir.
+
+- Geleneksel bir mimaride, komutlar ve sorgular genellikle aynı veri modelini kullanır ve aynı arayüzleri kullanarak veriye erişirler. Ancak CQRS deseninde, komutlar ve sorgular ayrı ayrı ele alınır ve farklı modeller ve mekanizmalar kullanılır.
+
+- CQRS deseninde, komutlar veri üzerinde değişiklik yapmak için kullanılır. Bunlar genellikle veri ekleme, güncelleme veya silme gibi işlemleri temsil eder. Komutlar, işlem sonrası geri bildirim veya asenkron olaylar yoluyla sonuç döndürebilir.
+
+- Sorgular ise veriye erişmek ve okumak için kullanılır. Sorgular, genellikle veriyi sorgulama, filtreleme ve görüntüleme gibi işlemleri gerçekleştirmek için kullanılır. Sorgular, performans ve ölçeklenebilirlik açısından optimize edilmiş ayrı bir veri modeli kullanabilir.
+
+- CQRS deseni, bir uygulamanın karmaşık işlemleri ve veri erişimi gerektiren senaryolarında kullanışlı olabilir. Özellikle büyük ve karmaşık sistemlerde, okuma ve yazma işlemlerinin farklı gereksinimlere sahip olduğu durumlarda CQRS deseni kullanılabilir. Bu desen, sistem performansını artırabilir, ölçeklenebilirliği iyileştirebilir ve kod tabanını daha modüler hale getirebilir.
+
+- Ancak CQRS deseni, uygulama geliştirme sürecindeki karmaşıklığı artırabilir ve gereksinimleri daha iyi anlamayı gerektirebilir. Bu nedenle, kullanılacağı senaryolar dikkatlice değerlendirilmeli ve doğru bir şekilde uygulanmalıdır.
 
 ### DDD Design Pattern nedir?
 
