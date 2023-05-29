@@ -141,6 +141,7 @@ public class Araba {
 - Sealed sınıflar genellikle, tamamen oluşturulmuş ve genişletilmesine veya değiştirilmesine ihtiyaç duyulmayan sınıflar için kullanılır. Bu, sınıfın davranışını veya yapısını değiştirmemeyi ve sağlam bir şekilde korumayı amaçlayan tasarım kararlarında kullanışlı olabilir.
 - Bir sınıfı sealed olarak işaretlemek, kodunuzun belirli bir noktada kesintiye uğramasını engellemeye yardımcı olabilir. Sealed sınıflar aynı zamanda performans açısından da iyileştirme sağlayabilir, çünkü C# derleyicisi, sealed sınıfların daha verimli bir şekilde optimize edilebileceğini bilir.
 - Sonuç olarak, sealed sınıflar C# dilinde miras alınmasını engelleyen sınıflardır. Bu özellik, kodunuzun sağlamlığını korumak ve belirli bir tasarımı güvence altına almak için kullanılabilir.
+- Detaylı kaynak; https://www.borakasmer.com/cda-sihirli-sealed-keywordu/
 
 ## Record class nedir?
 
