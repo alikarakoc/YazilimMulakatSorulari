@@ -329,3 +329,15 @@ public class Order
 ### Daha önce .Net/.Net Core platformlarında hangi test framework'lerini kullandınız?
 
 - Hazırlanıyor...
+
+### IoC nedir? Ne için kullanılır?
+
+- IoC (Inversion of Control), yazılım bileşenlerinin nasıl birbirleriyle etkileşime geçeceğinin yönetildiği bir tasarım prensibidir. Geleneksel yaklaşımda bileşenler birbirlerine doğrudan bağımlıdır, ancak IoC'de bu bağımlılık tersine çevrilir ve bileşenlerin kontrolü dışarıdan sağlanır. Bu, yazılımın daha esnek, test edilebilir ve bakımı kolay hale gelmesini sağlar.
+
+### Docker ve Docker Compose arasında ki fark nedir?
+
+- Docker, uygulamaları konteynerlere paketlemek ve dağıtmak için kullanılan bir konteynerleştirme platformudur. Konteynerler, bir uygulamanın çalışması için gereken tüm bağımlılıkları içeren taşınabilir ve izole edilmiş bir ortam sağlar. Docker, bir uygulamanın birden fazla ortamda sorunsuz bir şekilde çalışmasını sağlar ve sunucu, masaüstü ve bulut gibi farklı platformlarda çalışabilen hafif ve hızlı konteynerler oluşturur.
+
+- Docker Compose ise Docker konteynerlerinin yönetimi için kullanılan bir araçtır. Docker Compose, tek bir yerde birden fazla konteyneri tanımlamak ve bunları bir arada çalıştırmak için YAML tabanlı bir dosya formatı kullanır. Bu dosya, birden fazla konteynerin oluşturulmasını, yapılandırılmasını ve birbirleriyle etkileşimini tanımlar. Docker Compose, çok bileşenli uygulamaları kolayca çalıştırmak ve yönetmek için kullanılır.
+
+- Özetle, Docker konteynerlerinin oluşturulması ve yönetimi için Docker kullanılırken, Docker Compose ise birden fazla konteynerin bir arada çalıştırılmasını ve yönetilmesini sağlar. Docker Compose, konteyner tabanlı uygulamaların hızlı ve tutarlı bir şekilde dağıtılmasını kolaylaştırır.
