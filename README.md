@@ -261,6 +261,29 @@ public class Order
 
 - Bu örnekte, Aggregate Root olan Customer sınıfı üzerinden Order nesneleri yönetiliyor. Order nesneleri, Customer sınıfının içindeki Orders koleksiyonuna eklenip çıkarılıyor. Bu şekilde Aggregate Root ilişkisi ve tutarlılık sağlanmış oluyor.
 
+ ### JWT Token ve Yapısı Nedir?
+  -JWT, kimlik doğrulama ve yetkilendirme için kullanılan bir token formatıdır.
+
+  **JWT Yapısı**
+  
+  **Header**
+  
+JWT'nin imzalanması/şifrelenmesinde kullanılan algoritmayı içerir, genellikle HMAC SHA-256 veya HS256 olarak ayarlanır.
+
+**Payload(veri taşıyıcı)**
+
+Gerçek verileri içerir. Bu veriler, JSON formatında key-value çiftleri olarak temsil edilir.
+
+**Signature**
+
+İmza, header ve payload'ın birleştirilmesiyle oluşturulan bir koddur. İmza, headerda belirtilen algoritmaya göre oluşturulur. İmzanın doğrulanmasıyla, JWT'nin bütünlüğü sağlanır ve içerdiği verilerin güvenilirliği sağlanır.
+
+### JWT Authentication-Authorization Süreci Nedir?
+-JWT, kimlik doğrulama (authentication) ve yetkilendirme (authorization) süreçlerinde kullanılır. Bir kullanıcı oturum açtığında, sunucu tarafından verilen bir JWT ile kullanıcının kimliği doğrulanır ve bu token, kullanıcının her isteğinde sunucuya gönderilerek yetkilendirme işlemleri gerçekleştirilir. Kaynak sunucusu, JWT'yi doğrulamak zorundadır.
+
+### OAuth 2.0 nedir?
+-OAuth, kullanıcıların bir uygulamaya erişim yetkisi verme ve yetkilendirme işlemlerini sağlayan bir protokoldür.Örneğin, bir kullanıcının Facebook hesabını kullanarak başka bir uygulamaya erişim sağlamak istediğinde, OAuth protokolü kullanılarak yetkilendirme sağlanır.
+
 
 ### Value Object, Reference Object arasındaki farklar nelerdir. Açıklayınız?
 
