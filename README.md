@@ -287,71 +287,72 @@ Gerçek verileri içerir. Bu veriler, JSON formatında key-value çiftleri olara
 
 ### Value Object, Reference Object arasındaki farklar nelerdir. Açıklayınız?
 
-- Hazırlanıyor...
+- Value Object, değeri üzerinden karşılaştırılan ve değişmez bir yapıdır, referansı yoktur. Örneğin, tarih veya para birimi.
+- Reference Object, bellekte referansa sahip nesnelerdir ve kimlikleri vardır. Değişebilirler.
 
 ### Entity kavramları nedir kısaca özetleyiniz?
 
-- Hazırlanıyor...
+- Entity, benzersiz bir kimliğe sahip olan ve yaşam döngüsü boyunca değişen bir nesnedir. Örneğin, bir kullanıcı veya bir sipariş.
 
 ### Event sourcing pattern hakkında ne biliyorsunuz nedir açıklayabilirmisiniz?
 
-- Hazırlanıyor...
+- Event Sourcing, verilerin her değişikliğinin olaylar (events) aracılığıyla kaydedildiği bir tasarım desenidir. Bu olaylar daha sonra geçmiş durumun yeniden oluşturulması veya analiz için kullanılabilir.
 
 ### RabbitMQ Exchange Nedir ? Exchange Tipleri nelerdir?
 
-- Hazırlanıyor...
+- RabbitMQ Exchange, mesajların kuyruklara yönlendirildiği bir aracıdır. Exchange tipleri şunlardır: direct, fanout, topic, headers.
 
 ### Fair Dispatch nedir? Nasıl kullanılır?
 
-- Hazırlanıyor...
+- Fair Dispatch, çoklu tüketiciye sahip bir RabbitMQ kuyruğunda mesajların adil bir şekilde dağıtılması anlamına gelir. Bunu sağlamak için, "prefetch count" ayarını kullanabilirsiniz. Detaylandırmak sizin elinizde.
 
 ### Builder Design Pattern nedir ne amaçla kullanılır?
 
-- Hazırlanıyor...
+- Builder Tasarım Deseni, karmaşık nesnelerin oluşturulmasını basitleştirmek için kullanılır. Nesne oluşturma adımlarını ayırarak ve ardışık bir şekilde yapılandırarak kullanılır.
 
 ### Spesification Design Pattern nedir ne amaçla kullanılır? 
 
-- Hazırlanıyor...
+- Specification Tasarım Deseni, belirli bir kriteri karşılayan nesneleri filtrelemek veya seçmek için kullanılır. Özellikle sorgulamalarda ve filtrelemelerde kullanışlıdır.
 
 ### Factory Design Pattern nedir ne amaçla kullanılır?
 
-- Hazırlanıyor...
+- Factory Tasarım Deseni, nesne oluşturmayı merkezileştirir ve farklı alt sınıf türlerini döndürmek için kullanılır. Nesne oluşturma sürecini soyutlar.
 
 ### Saga Distributed Transactions Pattern nedir ne amaçla kullanılır?
 
-- Hazırlanıyor...
+- Saga, birçok adımdan oluşan işlemleri birden fazla servis arasında koordine etmek için kullanılan bir desen veya modeldir. Dağıtık işlemlerin güvenli ve tutarlı bir şekilde yürütülmesini sağlar.
 
 ### ConcurrentBag nedir ne için kullanırız?
 
-- Hazırlanıyor...
+- ConcurrentBag, çoklu iş parçacığı tarafından erişilen bir koleksiyon türüdür ve özellikle paralel programlamada kullanılır. Ekleme ve çıkarmaları destekler.
 
 ### Lock mekanizması nedir hiç kullandın mı ? Ne için kullandın?
 
-- Hazırlanıyor...
+- Kilitleme, çoklu iş parçacığı tarafından aynı anda erişilen kritik bölgeleri korumak için kullanılır. Özellikle paylaşılan verilere güvenli erişim sağlamak için kullanılırım. Örneğin, Monitor veya Mutex kullanabilirsiniz.
 
 ### Thread Safe – ConcurrentQueue, ConcurrentDictionary, ConcurrentBag, ConcurrentStack ve BlockingCollection Koleksiyonları hakkında neler biliyorsunuz?
 
-- Hazırlanıyor...
+- Bu koleksiyonlar, çoklu iş parçacıkları arasında veri paylaşımını güvenli bir şekilde sağlayan koleksiyon türleridir. İş parçacıkları arasında eşzamanlı erişimi desteklerler.
 
 ### Asenkron programlama nedir? Hangi problemlere çözüm sağlamaktadır?
 
-- Hazırlanıyor...
+- Asenkron programlama, uzun süren işlemleri engellemeden çalıştırmak için kullanılır. Özellikle kullanıcı arayüzü etkileşimi gibi durumlarda yanıt süresini artırır.
 
 ### ORM nedir? .Net/.Net Core platformlarında yaygın olarak kullanılan ORM teknolojileri hangileridir?
 
-- Hazırlanıyor...
+- ORM (Object-Relational Mapping), nesne tabanlı programlama dilleri ile ilişkisel veritabanları arasında veri dönüşümünü kolaylaştıran bir yazılım teknolojisidir. .NET/.NET Core'da Entity Framework ve NHibernate gibi ORM teknolojileri yaygın olarak kullanılır.
 
 ### Hangfire nedir? Hangi amaçla kullanılmaktadır?
 
-- Hazırlanıyor...
+- Hangfire, .NET tabanlı uygulamalar için planlanmış görevlerin ve arka plan işlemlerinin yönetimi için kullanılan bir açık kaynaklı bir kütüphanedir. Görevlerin otomatik olarak çalıştırılması ve izlenmesini sağlar.
 
 ### CI/CD nedir?
 
-- Hazırlanıyor...
+- CI/CD (Continuous Integration/Continuous Delivery), yazılım geliştirme süreçlerinde sürekli entegrasyon ve sürekli dağıtım uygulamalarını ifade eder. Sürekli entegrasyon, yazılım değişikliklerinin sürekli olarak ana koda entegre edilmesini içerir. Sürekli dağıtım, yazılımın sürekli olarak kullanılabilir durumda olmasını sağlar.
 
 ### Daha önce .Net/.Net Core platformlarında hangi test framework'lerini kullandınız?
 
-- Hazırlanıyor...
+- Bu soruya özel deneyiminizi belirtmeniz gerekecektir. .NET platformunda yaygın olarak kullanılan test framework'leri arasında NUnit, xUnit ve MSTest bulunur.
 
 ### IoC nedir? Ne için kullanılır?
 
