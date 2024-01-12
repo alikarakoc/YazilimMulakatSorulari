@@ -365,3 +365,25 @@ Gerçek verileri içerir. Bu veriler, JSON formatında key-value çiftleri olara
 - Docker Compose ise Docker konteynerlerinin yönetimi için kullanılan bir araçtır. Docker Compose, tek bir yerde birden fazla konteyneri tanımlamak ve bunları bir arada çalıştırmak için YAML tabanlı bir dosya formatı kullanır. Bu dosya, birden fazla konteynerin oluşturulmasını, yapılandırılmasını ve birbirleriyle etkileşimini tanımlar. Docker Compose, çok bileşenli uygulamaları kolayca çalıştırmak ve yönetmek için kullanılır.
 
 - Özetle, Docker konteynerlerinin oluşturulması ve yönetimi için Docker kullanılırken, Docker Compose ise birden fazla konteynerin bir arada çalıştırılmasını ve yönetilmesini sağlar. Docker Compose, konteyner tabanlı uygulamaların hızlı ve tutarlı bir şekilde dağıtılmasını kolaylaştırır.
+
+
+### pass by value/pass by reference kavramlarını nedir ?
+- "Pass by value" (değer ile geçiş) ve "pass by reference" (referans ile geçiş), bir programlama dilinde bir fonksiyona veya metoda argümanların nasıl iletilip geçirildiğini ifade eden iki kavramdır.
+
+Pass by Value (Değer ile Geçiş):
+
+    Bu yaklaşıma göre, bir fonksiyona veya metoda argüman olarak bir değer geçirilir.
+    Fonksiyon içinde bu değerin bir kopyası kullanılır ve fonksiyonun içinde yapılan değişiklikler, orijinal değeri etkilemez.
+    Java gibi dillerde genellikle bu yaklaşım kullanılır.
+
+Pass by Reference (Referans ile Geçiş):
+
+    Bu yaklaşıma göre, bir fonksiyona veya metoda argüman olarak bir referans geçirilir. Bu referans, aslında orijinal değişkenin bellek adresini gösterir.
+    Fonksiyon içinde bu referans aracılığıyla orijinal değişkenin değerleri değiştirilebilir.
+    Örneğin, C++ gibi dillerde referans kullanılarak bu tür bir geçiş sağlanabilir.
+
+### Access Modifierslar'da protected ile default arasındaki fark nedir ?
+
+- Default (Package-Private): Eğer bir üye (field, metod, sınıf) hiçbir access modifier belirtilmeden tanımlanırsa, bu üye o paket içindeki diğer sınıflar tarafından erişilebilir. Yani, aynı paket içindeki diğer sınıflar bu üyelere erişebilir, ancak paket dışındaki sınıflar erişemez.
+- Protected: Eğer bir üye "protected" olarak tanımlanırsa, o üye hem aynı paket içindeki sınıflar hem de o sınıftan türetilen diğer sınıflar tarafından erişilebilir. Yani, hem aynı paket içindeki sınıflar hem de başka paketlerden türetilmiş sınıflar erişebilir, ancak bu sınıfların örneğinden doğrudan erişim izni yoktur.
+
