@@ -387,3 +387,37 @@ Pass by Reference (Referans ile Geçiş):
 - Default (Package-Private): Eğer bir üye (field, metod, sınıf) hiçbir access modifier belirtilmeden tanımlanırsa, bu üye o paket içindeki diğer sınıflar tarafından erişilebilir. Yani, aynı paket içindeki diğer sınıflar bu üyelere erişebilir, ancak paket dışındaki sınıflar erişemez.
 - Protected: Eğer bir üye "protected" olarak tanımlanırsa, o üye hem aynı paket içindeki sınıflar hem de o sınıftan türetilen diğer sınıflar tarafından erişilebilir. Yani, hem aynı paket içindeki sınıflar hem de başka paketlerden türetilmiş sınıflar erişebilir, ancak bu sınıfların örneğinden doğrudan erişim izni yoktur.
 
+### Primary key ile Unique Key arasındaki fark nedir?
+
+- Primary key tabloda sadece bir adet olabilir. Unique key ise tabloda birden fazla olabilir.
+
+### SOAP ve REST nedir?
+
+- SOAP, internet üzerinden küçük miktarda bilgileri aktarma protokolüdür. XML formatındadır. REST ise, istemci ve sunucu arasında veri alışverişinin basit bir yoludur. XML, JSON, Text gibi formatlarda bu alışverişi yapabilir. SOAP'a göre daha hızlıdır.
+
+### SQL'de DELETE ve TRUNCATE arasındaki farklar nelerdir?
+
+- DELETE işlemi ile identity yok olmaz ve WHERE koşulu ile birlikte kullanabiliriz. Ancak TRUNCATE ile identity de silinir ve WHERE koşulu ile kullanılamaz.
+
+### String ve StringBuilder arasındaki farklar nelerdir?
+
+- String objesi değişmeyen, immutable bir nesnedir ve "+" ile yeni bir karakter eklendiğinde her defasında yeni bir String nesnesi yaratılır. StringBuilder ise bir kez yaratılır ve daha sonra yeni veriler buna eklenir. Bu nedenle StringBuilder sınıfının String sınıfına göre ciddi performans üstünlüğü bulunmaktadır. Ama temel olarak StringBuilder, String değişkeninin sahip olduğu metot ve özelliklere sahiptir.
+
+### SQL Index nedir?
+
+- Veritabanı tablolarındaki veriler sorgulandığında daha az veri okuyarak çok daha hızlı şekilde veriye ulaşıp sonucu döndüren yapılardır. Zaman maliyetini düşürür.
+
+### Garbage Collector nedir?
+
+- Heap üzerinde oluşturulmuş objelere yapılmış referansları takip edip belli durumlarda kullanım dışı kalanları bellekten uçuran yapıdır.
+
+### Inner, Left, Right ve Full Join nedir?
+
+- Inner Join: İki tabloda eşleşen kayıtlar için kullanılır.
+- Left Join: İki tabloda eşleşen ve eşleşmeyen sol kayıtlar için kullanılır.
+- Right Join: İki tabloda eşleşen ve eşleşmeyen sağ kayıtlar için kullanılır.
+- Full Join: İki tabloda eşleşen ve eşleşmeyen sol ve sağ kayıtlar için kullanılır.
+
+ ### Sayfa yavaş geliyorsa ne yaparsın?
+
+ - Request, servise ulaşıyor mu diye geliştirici seçeneklerindeki Network başlığı altında kontrol edilir. Eğer ulaşıyor ise yanıt dönüyor mu ya da ne yanıt dönüyor incelenir. Ayrıca, cacheleme(ön bellekleme yapmak) veya SQL sorgularını optimize etmek de sorunu çözmeye yardımcı olabilir.
