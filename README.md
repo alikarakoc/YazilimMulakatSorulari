@@ -1,7 +1,7 @@
  
 
 
-## Yazılım Mülakatı Soruları (Junior, Medior, Senior)
+## Yazılım Mülakatı Soruları (Junior, Medior, Senior) .NET 
 -  Repo yenidir. Sürekli olarak güncellenmektedir. Takibe almayı unutmayın. (Star, Watch)
 -  Sadece soruların olduğu listeye [buradan](./CevapsizSorular.md) ulaşabilirsiniz.
 -  Girdiğiniz mülakatlar da karşınıza çıkan soruları eklemek isterseniz pull request gönderebilirsiniz. Merge ediyorum.
